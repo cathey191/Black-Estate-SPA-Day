@@ -10,10 +10,14 @@
 	background-color: white;
 }
 
-#header img{
+#logo{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#logo img{
 	width: 100px;
 	height: auto;
-
 }
 
 #mainNav ul{
@@ -23,10 +27,47 @@
 
 #mainNav ul li{
 	display: inline-block;
-	padding: 1em;
+	padding: 5px;
 }
 
 #mainNav ul li a{
 	color: Black;
 	text-decoration: none;
+}
+
+.sectionImages img{
+	width: 100vw;
+	height: auto;
+}
+
+.sectionText{
+	margin: 10px;
+}
+
+#currentReleases{
+		text-align: center;
+}
+
+#currentReleases img{
+	max-height: 200px;
+	width: auto;
+}
+
+#currentReleases .sectionText{
+	text-align: left;
+}
+
+@media only screen and (min-width:768px){
+	#mainContent{
+		display: flex;
+		width: 100vw;
+	}
+	.sectionImages img{
+		width: 50vw;
+		height: auto;
+	}
+	.sectionText{
+		width: 50vw;
+		height: auto;
+	}
 }
