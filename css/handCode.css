@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+#header{
+	width: 100vw;
+	background-color: #9AECDB;
+}
+
+#logo{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#logo img{
+	width: 100px;
+	height: auto;
+}
+
+#mainNav ul{
+	list-style: none;
+	text-align: center;
+}
+
+#mainNav ul li{
+	display: inline-block;
+	padding: 5px;
+}
+
+#mainNav ul li a{
+	color: Black;
+	text-decoration: none;
+}
+
+.sectionImages img{
+	width: 100vw;
+	height: auto;
+}
+
+.sectionText{
+	margin: 10px;
+}
+
+#theWine{
+		text-align: center;
+}
+
+#theWine img{
+	max-height: 200px;
+	width: auto;
+}
+
+#theWine .sectionText{
+	text-align: left;
+}
+
+#footer{
+	width: 100vw;
+	background-color: Black;
+	color: #747d8c;
+	padding: 10px;
+}
+
+#footerAll{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#footer h3{
+	font-size: 12px;
+}
+
+#footer h4{
+	font-size: 11px;
+}
+
+#footer p{
+	font-size: 10px;
+}
+
+#footerContent{
+	display: flex;
+}
+
+#tastingRooms, #Hours{
+	width: 50vw;
+	margin: 5px;
+}
+
+@media only screen and (min-width:768px){
+	#mainContent #aim, #about, #theWine{
+		display: flex;
+		width: 100vw;
+		max-width: 1200px;
+		margin: 0 auto;
+		align-items: center;
+	}
+	.sectionImages img{
+		width: 50vw;
+		max-width: 600px;
+		height: auto;
+	}
+	.sectionText{
+		width: 50vw;
+		height: auto;
+	}
+	#about .sectionImages{
+		order: 2;
+	}
+	#about .sectionText{
+		order: 1;
+	}
+	#theWine .sectionImages{
+		width: 50vw;
+	}
+	#theWine img{
+		max-height: 300px;
+	}
+	#tastingRooms, #Hours{
+		width: 25vw;
+	}
+}
+
+@media only screen and (min-width:1200px) {
+	#currentReleases img{
+		max-height: 500px;
+	}
+
+}
