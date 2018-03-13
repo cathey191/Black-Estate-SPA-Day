@@ -58,7 +58,7 @@
 }
 
 @media only screen and (min-width:768px){
-	#mainContent{
+	#mainContent #aim, #about, #currentReleases{
 		display: flex;
 		width: 100vw;
 	}
@@ -69,5 +69,11 @@
 	.sectionText{
 		width: 50vw;
 		height: auto;
+	}
+	#about .sectionImages{
+		order: 2;
+	}
+	#about .sectionText{
+		order: 1;
 	}
 }
