@@ -6,7 +6,7 @@
 
 #header {
   width: 100vw;
-  background-color: green; }
+  background-color: blue; }
   #header #logo {
     text-align: center;
     margin: 0 auto; }
@@ -20,7 +20,7 @@
       display: inline-block;
       padding: 5px; }
       #header #mainNav ul li a {
-        color: #001a00;
+        color: #000099;
         text-decoration: none; }
 
 #mainContent {
@@ -28,9 +28,9 @@
   max-width: 1200px;
   margin: 0 auto; }
   #mainContent h3 {
-    color: #001a00; }
+    color: #000099; }
   #mainContent p {
-    color: #001a00; }
+    color: #000099; }
 
 .sectionImages img {
   width: 100vw;
@@ -56,8 +56,8 @@
 
 #footer {
   width: 100vw;
-  background-color: #001a00;
-  color: #004d00;
+  background-color: #000099;
+  color: #0000cc;
   padding-top: 25px;
   padding-bottom: 10px; }
   #footer #footerAll {
@@ -106,7 +106,7 @@
       padding: 10px; }
       #currentReleases .wines a {
         text-decoration: none;
-        color: #001a00; }
+        color: #000099; }
       #currentReleases .wines .price {
         text-align: right;
         align-items: baseline; } }
