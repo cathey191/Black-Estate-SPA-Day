@@ -4,24 +4,33 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
-header {
+#header {
   width: 100vw;
-  background-color: #9AECDB; }
-  header #logo {
+  background-color: green; }
+  #header #logo {
     text-align: center;
     margin: 0 auto; }
-    header #logo img {
+    #header #logo img {
       width: 100px;
       height: auto; }
-  header #mainNav ul {
+  #header #mainNav ul {
     list-style: none;
     text-align: center; }
-    header #mainNav ul li {
+    #header #mainNav ul li {
       display: inline-block;
       padding: 5px; }
-      header #mainNav ul li a {
-        color: #051c17;
+      #header #mainNav ul li a {
+        color: #001a00;
         text-decoration: none; }
+
+#mainContent {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto; }
+  #mainContent h3 {
+    color: #001a00; }
+  #mainContent p {
+    color: #001a00; }
 
 .sectionImages img {
   width: 100vw;
@@ -38,10 +47,17 @@ header {
   #theWine .sectionText {
     text-align: left; }
 
+#tastingRooms, #Hours {
+  width: 50vw;
+  margin: 5px; }
+
+#currentReleases {
+  display: none; }
+
 #footer {
   width: 100vw;
-  background-color: #051c17;
-  color: #115c4d;
+  background-color: #001a00;
+  color: #004d00;
   padding-top: 25px;
   padding-bottom: 10px; }
   #footer #footerAll {
@@ -56,16 +72,9 @@ header {
       #footer #footerAll #footerContent p {
         font-size: 10px; }
 
-#tastingRooms, #Hours {
-  width: 50vw;
-  margin: 5px; }
-
 @media only screen and (min-width: 768px) {
   #mainContent #aim, #about, #theWine {
     display: flex;
-    width: 100vw;
-    max-width: 1200px;
-    margin: 0 auto;
     align-items: center; }
 
   .sectionImages img {
@@ -90,7 +99,16 @@ header {
   #tastingRooms, #Hours {
     width: 25vw; } }
 @media only screen and (min-width: 1200px) {
-  #currentReleases img {
-    max-height: 500px; } }
+  #currentReleases {
+    display: flex; }
+    #currentReleases .wines {
+      width: 25vw;
+      padding: 10px; }
+      #currentReleases .wines a {
+        text-decoration: none;
+        color: #001a00; }
+      #currentReleases .wines .price {
+        text-align: right;
+        align-items: baseline; } }
 
 /*# sourceMappingURL=style.css.map */

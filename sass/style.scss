@@ -7,7 +7,7 @@
 	font-family: sans-serif;
 }
 
-header{
+#header{
 	width: 100vw;
 	background-color: $primaryColor;
 	#logo{
@@ -26,11 +26,23 @@ header{
 				display: inline-block;
 				padding: 5px;
 				a{
-					color: darken($primaryColor, 70%);
+					color: $darkenColor;
 					text-decoration: none;
 				}
 			}
 		}
+	}
+}
+
+#mainContent{
+	width: 100vw;
+	max-width: 1200px;
+	margin: 0 auto;
+	h3{
+		color: $darkenColor;
+	}
+	p{
+		color: $darkenColor;
 	}
 }
 
@@ -54,10 +66,19 @@ header{
 		}
 }
 
+#tastingRooms, #Hours{
+	width: $halfWidth;
+	margin: 5px;
+}
+
+#currentReleases{
+	display: none;
+}
+
 #footer{
 	width: 100vw;
-	background-color: darken($primaryColor, 70%);
-	color: darken($primaryColor, 55%);
+	background-color: $darkenColor;
+	color: darken($primaryColor, 10%);
 	padding-top: 25px;
 	padding-bottom: 10px;
 	#footerAll{
@@ -78,14 +99,10 @@ header{
 	}
 }
 
-#tastingRooms, #Hours{
-	width: $halfWidth;
-	margin: 5px;
-}
-
 @media only screen and (min-width:768px){
 	#mainContent #aim, #about, #theWine{
-		@include sectionSquares;
+		display: flex;
+		align-items: center;
 	}
 	.sectionImages img{
 		width: $halfWidth;
@@ -118,7 +135,23 @@ header{
 }
 
 @media only screen and (min-width:1200px) {
-	#currentReleases img{
-		max-height: 500px;
+	#currentReleases{
+		display: flex;
+		.wines{
+			width: 25vw;
+			padding: 10px;
+			a{
+				text-decoration: none;
+				color: $darkenColor;
+			}
+			p{
+
+			}
+			.price{
+				text-align: right;
+				align-items: baseline;
+			}
+		}
 	}
+
 }
