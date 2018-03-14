@@ -1,3 +1,5 @@
+@import "variables";
+
 *{
 	margin: 0;
 	padding: 0;
@@ -7,29 +9,26 @@
 
 header{
 	width: 100vw;
-	background-color: #9AECDB;
-}
-
-#logo{
-	text-align: center;
-	margin: 0 auto;
-}
-
-#logo img{
-	width: 100px;
-	height: auto;
-}
-
-#mainNav{
-	ul{
-		list-style: none;
+	background-color: $primaryColor;
+	#logo{
 		text-align: center;
-		li{
-			display: inline-block;
-			padding: 5px;
-			a{
-				color: Black;
-				text-decoration: none;
+		margin: 0 auto;
+		img{
+			width: 100px;
+			height: auto;
+		}
+	}
+	#mainNav{
+		ul{
+			list-style: none;
+			text-align: center;
+			li{
+				display: inline-block;
+				padding: 5px;
+				a{
+					color: darken($primaryColor, 70%);
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -57,7 +56,7 @@ header{
 
 #footer{
 	width: 100vw;
-	background-color: Black;
+	background-color: darken($primaryColor, 70%);
 	color: #747d8c;
 	padding: 10px;
 	#footerAll{
@@ -79,38 +78,38 @@ header{
 }
 
 #tastingRooms, #Hours{
-	width: 50vw;
+	width: $halfWidth;
 	margin: 5px;
 }
 
 @media only screen and (min-width:768px){
 	#mainContent #aim, #about, #theWine{
-		display: flex;
-		width: 100vw;
-		max-width: 1200px;
-		margin: 0 auto;
-		align-items: center;
+		@include sectionSquares;
 	}
 	.sectionImages img{
-		width: 50vw;
+		width: $halfWidth;
 		max-width: 600px;
 		height: auto;
 	}
 	.sectionText{
-		width: 50vw;
+		width: $halfWidth;
 		height: auto;
 	}
-	#about .sectionImages{
-		order: 2;
+	#about {
+		.sectionImages{
+			order: 2;
+		}
+		.sectionText{
+			order: 1;
+		}
 	}
-	#about .sectionText{
-		order: 1;
-	}
-	#theWine .sectionImages{
-		width: 50vw;
-	}
-	#theWine img{
-		max-height: 300px;
+	#theWine{
+		.sectionImages{
+			width: $halfWidth;
+		}
+		img{
+			max-height: 300px;
+		}
 	}
 	#tastingRooms, #Hours{
 		width: 25vw;
