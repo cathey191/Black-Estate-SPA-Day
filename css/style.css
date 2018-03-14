@@ -7,24 +7,21 @@
 header {
   width: 100vw;
   background-color: #9AECDB; }
-
-#logo {
-  text-align: center;
-  margin: 0 auto; }
-
-#logo img {
-  width: 100px;
-  height: auto; }
-
-#mainNav ul {
-  list-style: none;
-  text-align: center; }
-  #mainNav ul li {
-    display: inline-block;
-    padding: 5px; }
-    #mainNav ul li a {
-      color: Black;
-      text-decoration: none; }
+  header #logo {
+    text-align: center;
+    margin: 0 auto; }
+    header #logo img {
+      width: 100px;
+      height: auto; }
+  header #mainNav ul {
+    list-style: none;
+    text-align: center; }
+    header #mainNav ul li {
+      display: inline-block;
+      padding: 5px; }
+      header #mainNav ul li a {
+        color: #051c17;
+        text-decoration: none; }
 
 .sectionImages img {
   width: 100vw;
@@ -44,8 +41,9 @@ header {
 #footer {
   width: 100vw;
   background-color: #051c17;
-  color: #15725f;
-  padding: 10px; }
+  color: #115c4d;
+  padding-top: 25px;
+  padding-bottom: 10px; }
   #footer #footerAll {
     max-width: 1200px;
     margin: 0 auto; }
@@ -81,13 +79,11 @@ header {
 
   #about .sectionImages {
     order: 2; }
-
   #about .sectionText {
     order: 1; }
 
   #theWine .sectionImages {
     width: 50vw; }
-
   #theWine img {
     max-height: 300px; }
 
