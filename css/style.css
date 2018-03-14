@@ -6,7 +6,7 @@
 
 #header {
   width: 100vw;
-  background-color: blue; }
+  background-color: green; }
   #header #logo {
     text-align: center;
     margin: 0 auto; }
@@ -20,7 +20,7 @@
       display: inline-block;
       padding: 5px; }
       #header #mainNav ul li a {
-        color: #000099;
+        color: #001a00;
         text-decoration: none; }
 
 #mainContent {
@@ -28,9 +28,12 @@
   max-width: 1200px;
   margin: 0 auto; }
   #mainContent h3 {
-    color: #000099; }
+    color: #001a00;
+    padding-bottom: 5px; }
   #mainContent p {
-    color: #000099; }
+    color: #001a00;
+    font-size: 14px;
+    text-decoration: none; }
 
 .sectionImages img {
   width: 100vw;
@@ -56,8 +59,8 @@
 
 #footer {
   width: 100vw;
-  background-color: #000099;
-  color: #0000cc;
+  background-color: #001a00;
+  color: #004d00;
   padding-top: 25px;
   padding-bottom: 10px; }
   #footer #footerAll {
@@ -69,7 +72,7 @@
         font-size: 12px; }
       #footer #footerAll #footerContent h4 {
         font-size: 11px; }
-      #footer #footerAll #footerContent p {
+      #footer #footerAll #footerContent P {
         font-size: 10px; }
 
 @media only screen and (min-width: 768px) {
@@ -106,9 +109,10 @@
       padding: 10px; }
       #currentReleases .wines a {
         text-decoration: none;
-        color: #000099; }
+        color: #001a00; }
       #currentReleases .wines .price {
         text-align: right;
-        align-items: baseline; } }
+        align-items: baseline;
+        font-weight: bold; } }
 
 /*# sourceMappingURL=style.css.map */

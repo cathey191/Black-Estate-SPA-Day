@@ -40,9 +40,10 @@
 	margin: 0 auto;
 	h3{
 		color: $darkenColor;
+		padding-bottom: 5px;
 	}
 	p{
-		color: $darkenColor;
+		@include bodyText;
 	}
 }
 
@@ -92,7 +93,7 @@
 			h4{
 				font-size: 11px;
 			}
-			p{
+			P{
 				font-size: 10px;
 			}
 		}
@@ -144,12 +145,10 @@
 				text-decoration: none;
 				color: $darkenColor;
 			}
-			p{
-
-			}
 			.price{
 				text-align: right;
 				align-items: baseline;
+				font-weight: bold;
 			}
 		}
 	}

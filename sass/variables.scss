@@ -1,3 +1,9 @@
-$primaryColor : blue;
+$primaryColor : green;
 $darkenColor : darken($primaryColor, 20%);
 $halfWidth : 50vw;
+
+@mixin bodyText {
+	color: $darkenColor;
+	font-size: 14px;
+	text-decoration: none;
+}
