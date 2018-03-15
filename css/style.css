@@ -4,9 +4,12 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
+body {
+  background-color: #dfe2e6; }
+
 #header {
   width: 100vw;
-  background-color: green; }
+  background-color: #c2c7d0; }
   #header #logo {
     text-align: center;
     margin: 0 auto; }
@@ -20,18 +23,44 @@
       display: inline-block;
       padding: 5px; }
       #header #mainNav ul li a {
-        color: #001a00;
+        color: #4c5461;
         text-decoration: none; }
+    #header #mainNav ul .dropdown {
+      position: relative;
+      display: inline-block; }
+      #header #mainNav ul .dropdown .dropbtn {
+        padding: 15px;
+        border: none;
+        background-color: #c2c7d0;
+        color: #4c5461;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold; }
+      #header #mainNav ul .dropdown .dropdown-content {
+        display: none;
+        position: absolute; }
+        #header #mainNav ul .dropdown .dropdown-content a {
+          color: #4c5461;
+          font-size: 14px;
+          text-decoration: none;
+          padding: 15px;
+          display: block; }
+        #header #mainNav ul .dropdown .dropdown-content a:hover {
+          background-color: #dfe2e6; }
+    #header #mainNav ul .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: #c2c7d0; }
 
 #mainContent {
   width: 100vw;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: white; }
   #mainContent h3 {
-    color: #001a00;
+    color: #4c5461;
     padding-bottom: 5px; }
   #mainContent p {
-    color: #001a00;
+    color: #4c5461;
     font-size: 14px;
     text-decoration: none; }
 
@@ -59,8 +88,8 @@
 
 #footer {
   width: 100vw;
-  background-color: #001a00;
-  color: #004d00;
+  background-color: #4c5461;
+  color: #7b8698;
   padding-top: 25px;
   padding-bottom: 10px; }
   #footer #footerAll {
@@ -109,7 +138,7 @@
       padding: 10px; }
       #currentReleases .wines a {
         text-decoration: none;
-        color: #001a00; }
+        color: #4c5461; }
       #currentReleases .wines .price {
         text-align: right;
         align-items: baseline;

@@ -7,9 +7,13 @@
 	font-family: sans-serif;
 }
 
+body{
+	background-color: $lightColor;
+}
+
 #header{
 	width: 100vw;
-	background-color: $primaryColor;
+	background-color: $headerBGColor;
 	#logo{
 		text-align: center;
 		margin: 0 auto;
@@ -30,6 +34,32 @@
 					text-decoration: none;
 				}
 			}
+			.dropdown{
+    		position: relative;
+    		display: inline-block;
+				.dropbtn{
+					padding: 15px;
+    			border: none;
+					background-color: $headerBGColor;
+					@include headerText;
+				}
+				.dropdown-content {
+    		display: none;
+    		position: absolute;
+				a{
+					@include bodyText;
+					padding: 15px;
+    			display: block;
+					}
+				a:hover {background-color: $lightColor}
+				}
+			}
+			.dropdown:hover{
+				.dropdown-content{
+					display: block;
+    			background-color: $headerBGColor;
+				}
+			}
 		}
 	}
 }
@@ -38,6 +68,7 @@
 	width: 100vw;
 	max-width: 1200px;
 	margin: 0 auto;
+	background-color: white;
 	h3{
 		color: $darkenColor;
 		padding-bottom: 5px;
@@ -79,7 +110,7 @@
 #footer{
 	width: 100vw;
 	background-color: $darkenColor;
-	color: darken($primaryColor, 10%);
+	color: $footerText;
 	padding-top: 25px;
 	padding-bottom: 10px;
 	#footerAll{

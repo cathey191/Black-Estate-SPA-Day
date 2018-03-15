@@ -1,9 +1,22 @@
-$primaryColor : green;
-$darkenColor : darken($primaryColor, 20%);
+// Main variables
+$primaryColor : #57606f;
+$darkenColor : darken($primaryColor, 5%);
+$lightColor : lighten($primaryColor, 50%);
 $halfWidth : 50vw;
+
+// Layout Colors
+$footerText : lighten($primaryColor, 15%);
+$headerBGColor : lighten($primaryColor, 40%);
 
 @mixin bodyText {
 	color: $darkenColor;
 	font-size: 14px;
 	text-decoration: none;
+}
+
+@mixin headerText {
+	color: $darkenColor;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
 }
