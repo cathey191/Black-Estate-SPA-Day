@@ -87,24 +87,8 @@ body {
 #currentReleases {
   display: none; }
 
-#footer {
-  width: 100vw;
-  background-color: #4c5461;
-  color: #7b8698;
-  padding-bottom: 10px;
-  padding-top: 15px;
-  bottom: 0px; }
-  #footer #footerAll {
-    max-width: 1200px;
-    margin: 0 auto; }
-    #footer #footerAll #footerContent {
-      display: flex; }
-      #footer #footerAll #footerContent h3 {
-        font-size: 12px; }
-      #footer #footerAll #footerContent h4 {
-        font-size: 11px; }
-      #footer #footerAll #footerContent P {
-        font-size: 10px; }
+footer {
+  display: none; }
 
 @media only screen and (min-width: 768px) {
   #mainContent section {
@@ -136,7 +120,20 @@ body {
     max-height: 300px; }
 
   #tastingRooms, #Hours {
-    width: 25vw; } }
+    width: 25vw; }
+
+  #currentReleases {
+    display: flex; }
+    #currentReleases .wines {
+      width: 50vw;
+      padding: 10px; }
+      #currentReleases .wines a {
+        text-decoration: none;
+        color: #4c5461; }
+      #currentReleases .wines .price {
+        text-align: right;
+        align-items: baseline;
+        font-weight: bold; } }
 @media only screen and (min-width: 1200px) {
   #currentReleases {
     display: flex; }
@@ -149,6 +146,36 @@ body {
       #currentReleases .wines .price {
         text-align: right;
         align-items: baseline;
-        font-weight: bold; } }
+        font-weight: bold; }
+
+  footer {
+    display: inline-block;
+    width: 100vw;
+    background-color: #4c5461;
+    color: #7b8698;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    bottom: 0px;
+    margin: 0 auto; }
+    footer #footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex; }
+      footer #footer section {
+        padding-right: 25px;
+        margin: 0 auto; }
+      footer #footer h3 {
+        font-size: 16px; }
+      footer #footer .footerContent {
+        display: flex; }
+        footer #footer .footerContent .contOptions {
+          padding-top: 5px;
+          padding-right: 8px; }
+        footer #footer .footerContent h4 {
+          font-size: 14px; }
+        footer #footer .footerContent P, footer #footer .footerContent a {
+          color: #7b8698;
+          font-size: 12px;
+          text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */

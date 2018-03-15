@@ -8,17 +8,23 @@ $halfWidth : 50vw;
 $footerText : lighten($primaryColor, 15%);
 $headerBGColor : lighten($primaryColor, 40%);
 
+@mixin headerText {
+	color: $darkenColor;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 @mixin bodyText {
 	color: $darkenColor;
 	font-size: 14px;
 	text-decoration: none;
 }
 
-@mixin headerText {
-	color: $darkenColor;
-	font-size: 16px;
+@mixin footerTextS {
+	color: $footerText;
+	font-size: 12px;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 @mixin reorder {
