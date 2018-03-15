@@ -22,7 +22,7 @@ body {
     text-align: center; }
     #header #mainNav ul li {
       display: inline-block;
-      padding: 5px; }
+      padding: 10px; }
       #header #mainNav ul li a {
         color: #4c5461;
         text-decoration: none; }
@@ -124,30 +124,25 @@ footer {
     width: 25vw; }
 
   #currentReleases {
-    display: flex; }
+    display: flex;
+    background-color: #dfe2e6; }
     #currentReleases .wines {
       width: 50vw;
-      padding: 10px; }
+      padding: 10px;
+      align-items: baseline; }
       #currentReleases .wines a {
         text-decoration: none;
         color: #4c5461; }
+      #currentReleases .wines p {
+        color: #4c5461;
+        font-size: 14px;
+        text-decoration: none; }
       #currentReleases .wines .price {
         text-align: right;
-        align-items: baseline;
         font-weight: bold; } }
 @media only screen and (min-width: 1200px) {
   #currentReleases {
-    display: flex; }
-    #currentReleases .wines {
-      width: 25vw;
-      padding: 10px; }
-      #currentReleases .wines a {
-        text-decoration: none;
-        color: #4c5461; }
-      #currentReleases .wines .price {
-        text-align: right;
-        align-items: baseline;
-        font-weight: bold; }
+    background-color: white; }
 
   footer {
     display: inline-block;
