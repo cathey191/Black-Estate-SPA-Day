@@ -20,3 +20,12 @@ $headerBGColor : lighten($primaryColor, 40%);
 	text-decoration: none;
 	font-weight: bold;
 }
+
+@mixin reorder {
+	.sectionImages{
+		order: 2;
+	}
+	.sectionText{
+		order: 1;
+	}
+}

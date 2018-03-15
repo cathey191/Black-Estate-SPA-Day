@@ -9,7 +9,8 @@ body {
 
 #header {
   width: 100vw;
-  background-color: #c2c7d0; }
+  background-color: #c2c7d0;
+  top: 0px; }
   #header #logo {
     text-align: center;
     margin: 0 auto; }
@@ -56,13 +57,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: white; }
-  #mainContent h3 {
-    color: #4c5461;
-    padding-bottom: 5px; }
-  #mainContent p {
-    color: #4c5461;
-    font-size: 14px;
-    text-decoration: none; }
 
 .sectionImages img {
   width: 100vw;
@@ -70,6 +64,13 @@ body {
 
 .sectionText {
   margin: 10px; }
+  .sectionText h3 {
+    color: #4c5461;
+    padding-bottom: 5px; }
+  .sectionText p {
+    color: #4c5461;
+    font-size: 14px;
+    text-decoration: none; }
 
 #theWine {
   text-align: center; }
@@ -90,8 +91,9 @@ body {
   width: 100vw;
   background-color: #4c5461;
   color: #7b8698;
-  padding-top: 25px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-top: 15px;
+  bottom: 0px; }
   #footer #footerAll {
     max-width: 1200px;
     margin: 0 auto; }
@@ -105,7 +107,7 @@ body {
         font-size: 10px; }
 
 @media only screen and (min-width: 768px) {
-  #mainContent #aim, #about, #theWine {
+  #mainContent section {
     display: flex;
     align-items: center; }
 
@@ -121,6 +123,11 @@ body {
   #about .sectionImages {
     order: 2; }
   #about .sectionText {
+    order: 1; }
+
+  #damsteep .sectionImages {
+    order: 2; }
+  #damsteep .sectionText {
     order: 1; }
 
   #theWine .sectionImages {

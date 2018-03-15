@@ -14,6 +14,7 @@ body{
 #header{
 	width: 100vw;
 	background-color: $headerBGColor;
+	top: 0px;
 	#logo{
 		text-align: center;
 		margin: 0 auto;
@@ -69,13 +70,6 @@ body{
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color: white;
-	h3{
-		color: $darkenColor;
-		padding-bottom: 5px;
-	}
-	p{
-		@include bodyText;
-	}
 }
 
 .sectionImages img{
@@ -85,6 +79,13 @@ body{
 
 .sectionText{
 	margin: 10px;
+	h3{
+		color: $darkenColor;
+		padding-bottom: 5px;
+	}
+	p{
+		@include bodyText;
+	}
 }
 
 #theWine{
@@ -111,8 +112,9 @@ body{
 	width: 100vw;
 	background-color: $darkenColor;
 	color: $footerText;
-	padding-top: 25px;
 	padding-bottom: 10px;
+	padding-top: 15px;
+	bottom: 0px;
 	#footerAll{
 		max-width: 1200px;
 		margin: 0 auto;
@@ -132,7 +134,7 @@ body{
 }
 
 @media only screen and (min-width:768px){
-	#mainContent #aim, #about, #theWine{
+	#mainContent section{
 		display: flex;
 		align-items: center;
 	}
@@ -146,12 +148,10 @@ body{
 		height: auto;
 	}
 	#about {
-		.sectionImages{
-			order: 2;
-		}
-		.sectionText{
-			order: 1;
-		}
+		@include reorder;
+	}
+	#damsteep{
+		@include reorder;
 	}
 	#theWine{
 		.sectionImages{
