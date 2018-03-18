@@ -34,3 +34,10 @@ $headerBGColor : lighten($primaryColor, 40%);
 		order: 1;
 	}
 }
+
+@mixin CTAButtons {
+	margin-top: 15px;
+	padding: 5px;
+	background-color: $lightColor;
+	@include bodyText;
+}
