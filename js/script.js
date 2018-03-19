@@ -1,6 +1,13 @@
 $(document).ready(function(){
-	$(".dropbtn").click(function(){
-		$(".dropContent").toggle();
+	$(".dropButton").hover(function(){
+		$(".dropContent").show();
 	});
 
+	// $(".dropButton").click(function(){
+	// 	$(".dropContent").toggle();
+	// });
+
+	$(".Vine").click(function(){
+		event.preventDefault();
+	});
 });

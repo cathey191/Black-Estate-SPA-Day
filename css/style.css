@@ -29,7 +29,7 @@ body {
   #header #mainNav .dropdown {
     position: relative;
     display: inline-block; }
-    #header #mainNav .dropdown .dropbtn {
+    #header #mainNav .dropdown .dropButton {
       border: none;
       background-color: #c2c7d0;
       color: #4c5461;
@@ -37,13 +37,16 @@ body {
       text-decoration: none; }
     #header #mainNav .dropdown .dropContent {
       display: none;
-      position: absolute; }
+      position: absolute;
+      background-color: #c2c7d0; }
       #header #mainNav .dropdown .dropContent a {
         color: #4c5461;
         font-size: 14px;
         text-decoration: none;
         padding: 15px;
         display: block; }
+      #header #mainNav .dropdown .dropContent a:hover {
+        background-color: #dfe2e6; }
 
 #mainContent {
   width: 100vw;

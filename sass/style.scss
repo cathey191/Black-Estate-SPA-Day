@@ -39,7 +39,7 @@ body{
 			.dropdown{
     		position: relative;
     		display: inline-block;
-				.dropbtn{
+				.dropButton{
     			border: none;
 					background-color: $headerBGColor;
 					@include headerText;
@@ -47,22 +47,19 @@ body{
 				.dropContent {
     		display: none;
     		position: absolute;
+				background-color: $headerBGColor;
 				a{
 					@include bodyText;
 					padding: 15px;
     			display: block;
 					}
-			// 	a:hover {background-color: $lightColor}
-			// 	}
-			// }
-			// .dropdown:hover{
-				// .dropdown-content{
-				// 	display: block;
-    		// 	background-color: $headerBGColor;
+				a:hover {background-color: $lightColor}
+				}
 			}
-		}
 	}
 }
+
+
 
 #mainContent{
 	width: 100vw;
