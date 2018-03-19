@@ -35,20 +35,15 @@ body {
       color: #4c5461;
       font-size: 16px;
       text-decoration: none; }
-    #header #mainNav .dropdown .dropdown-content {
+    #header #mainNav .dropdown .dropContent {
       display: none;
       position: absolute; }
-      #header #mainNav .dropdown .dropdown-content a {
+      #header #mainNav .dropdown .dropContent a {
         color: #4c5461;
         font-size: 14px;
         text-decoration: none;
         padding: 15px;
         display: block; }
-      #header #mainNav .dropdown .dropdown-content a:hover {
-        background-color: #dfe2e6; }
-  #header #mainNav .dropdown:hover .dropdown-content {
-    display: block;
-    background-color: #c2c7d0; }
 
 #mainContent {
   width: 100vw;

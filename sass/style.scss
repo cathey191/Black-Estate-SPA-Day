@@ -44,7 +44,7 @@ body{
 					background-color: $headerBGColor;
 					@include headerText;
 				}
-				.dropdown-content {
+				.dropContent {
     		display: none;
     		position: absolute;
 				a{
@@ -52,13 +52,13 @@ body{
 					padding: 15px;
     			display: block;
 					}
-				a:hover {background-color: $lightColor}
-				}
-			}
-			.dropdown:hover{
-				.dropdown-content{
-					display: block;
-    			background-color: $headerBGColor;
+			// 	a:hover {background-color: $lightColor}
+			// 	}
+			// }
+			// .dropdown:hover{
+				// .dropdown-content{
+				// 	display: block;
+    		// 	background-color: $headerBGColor;
 			}
 		}
 	}
