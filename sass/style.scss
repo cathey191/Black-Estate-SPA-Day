@@ -85,6 +85,9 @@ body{
 	p{
 		@include bodyText;
 	}
+	button{
+		@include CTAButtons;
+	}
 }
 
 #theWine{

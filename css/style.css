@@ -64,6 +64,13 @@ body {
     color: #4c5461;
     font-size: 14px;
     text-decoration: none; }
+  .sectionText button {
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #dfe2e6;
+    color: #4c5461;
+    font-size: 14px;
+    text-decoration: none; }
 
 #theWine {
   text-align: center; }
